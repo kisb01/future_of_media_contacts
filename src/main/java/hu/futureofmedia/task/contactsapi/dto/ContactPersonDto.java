@@ -20,6 +20,16 @@ public class ContactPersonDto {
     private Long companyId;
     private String comment;
 
+    public ContactPersonDto() {
+    }
+
+    public ContactPersonDto(String firstName, String lastName, String email, Long companyId) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.companyId = companyId;
+    }
+
     public Long getId() {
         return id;
     }
